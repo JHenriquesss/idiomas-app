@@ -10,19 +10,19 @@
     <div class="container" id="tela-inicial">
         <h1>Bem-vindo ao Aprenda Idiomas!</h1>
         <p>Seu app para praticar e aprender novos idiomas de forma divertida e fácil.</p>
-        <button onclick="iniciarMultiplaEscolha()">Iniciar Exercícios Clozemaster</button>
+        <button onclick="iniciarClozeTeste()">Iniciar Cloze Teste</button>
     </div>
 
-    <div class="container" id="tela-multipla" style="display: none;">
-      <h2>Complete a frase:</h2>
-      <p id="fraseMultipla"></p>
-      <div id="opcoesMultipla"></div>
-      <p id="feedbackMultipla"></p>
-      <button id="proximoMultiplaBtn" style="display: none;">Próximo</button>
-      <p id="traducaoMultipla" style="color: #555; margin-top: 16px;"></p>
+    <div class="container" id="tela-cloze" style="display: none;">
+      <h2>Cloze Teste: Complete a frase</h2>
+      <p id="fraseCloze"></p>
+      <div id="opcoesCloze"></div>
+      <p id="feedbackCloze"></p>
+      <button id="proximoClozeBtn" style="display: none;">Próximo</button>
+      <p id="traducaoCloze" style="color: #555; margin-top: 16px;"></p>
     </div>
 
-    <script src="exercicios_clozemaster.js"></script>
+    <script src="exercicios_cloze.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
