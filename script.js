@@ -1,7 +1,7 @@
 let indiceCloze = 0;
 
 function mostrarExercicioCloze() {
-  const exercicio = exerciciosCloze[indiceCloze];
+  const exercicio = exerciciosClozeTeste[indiceCloze];
   document.getElementById('fraseCloze').textContent = exercicio.frase;
   document.getElementById('feedbackCloze').textContent = '';
   document.getElementById('traducaoCloze').textContent = '';
@@ -34,7 +34,7 @@ function iniciarClozeTeste() {
 
 document.getElementById('proximoClozeBtn').addEventListener('click', function() {
   indiceCloze++;
-  if (indiceCloze < exerciciosCloze.length) {
+  if (indiceCloze < exerciciosClozeTeste.length) {
     mostrarExercicioCloze();
   } else {
     document.getElementById('tela-cloze').innerHTML = "<h2>Parabéns!</h2><p>Você completou todos os exercícios!</p>";
